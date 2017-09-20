@@ -109,6 +109,15 @@ p{
   width: 100%;
 }
 
+.content.contact-visible {
+  background-size: inherit;
+}
+
+.content.contact-visible .col1,
+.content.contact-visible #footer {
+  display: none;
+}
+
 /*---PRESENTATION---*/
 
 
