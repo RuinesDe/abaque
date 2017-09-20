@@ -39,7 +39,7 @@ body {
 }
 
 a{
-  color: #c71585;
+  color: #FF1493;
   text-decoration: none;
 }
 
@@ -63,7 +63,7 @@ h2 a:after {
   height: 1px;
   bottom: 3px;
   left: 0;
-  border-bottom: 1px dotted #c71585;
+  border-bottom: 1px dotted #FF1493;
   display: inline-block;
 }
 
@@ -120,7 +120,7 @@ p{
   text-align: left;
   height: 150px;
   left: 16px;
-  top: 50px;
+  top: 300px;
 }
 
 .col1 h2{
@@ -138,7 +138,7 @@ p{
 .col1 a:visited,
 .col1 a:hover,
 .col1 a:focus{
-  color: #FF1493;
+  color: #00D1C1;
 }
 
 
@@ -172,7 +172,7 @@ p{
 #footer a:visited,
 #footer a:hover,
 #footer a:focus{
-  color: #FF1493;
+  color: #00D1C1;
 }
 
 #footer p{
