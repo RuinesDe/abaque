@@ -64,9 +64,10 @@ var Abaque = (function () {
   };
 
   var handleBackgroundClick = function handleBackgroundClick (e) {
-    e.preventDefault();
 
     if (e.target === this) {
+      e.preventDefault();
+
       if(backgroundStatus !== 0) {
         changeMainContentBackground(defaultBackgroundUrl);
         mainContent.classList.remove('contact-visible');
