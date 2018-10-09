@@ -49,11 +49,13 @@ body {
   min-height: 100%;
 }
 
-@media screen and (max-width: 640px) {
+/*
+@media screen and (max-width: 1079px) {
   body {
     height: 100%;
   }
 }
+*/
 
 body {
   padding: 0;
@@ -137,7 +139,7 @@ ul p{
   z-index: 2;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1079px) {
   .contentHome{
     position: relative;
   }
@@ -168,7 +170,7 @@ ul p{
   max-width: 45%
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1079px) {
   .contentFixedProjets{
     position: static;
     max-width: 100%;
@@ -192,9 +194,15 @@ ul p{
   width: 50%;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 959px) {
   .MenuHome,
-  .MenuArchitecture,
+  .MenuArchitecture{
+    width: 100%;
+    position: static;
+  }
+}
+
+@media screen and (max-width: 1079px) {
   .MenuProjets{
     width: 100%;
     position: static;
@@ -254,12 +262,17 @@ ul p{
 }
 
 /*---NAVIGATION---*/
+.contentNavigation{
+  width: 100%;
+  position: relative;
+}
+
+
 .Navigation{
   text-align: center;
-  width: 50%;
   display: block;
-  vertical-align: top;
-  position: relative;
+  right: 22,5%;
+  margin: 10px 0;
 }
 
 .Navigation h3{
@@ -267,16 +280,9 @@ ul p{
   margin: 5px 0;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1079px) {
   .Navigation{
     width: 100%;
-    position: static;
-    margin: 20px 0;
-  }
-}
-
-@media screen and (min-width: 641px) and (max-width: 1280px) {
-  .Navigation{
     position: static;
     margin: 20px 0;
   }
@@ -287,14 +293,14 @@ ul p{
 .contentContact{
   position: fixed;
   max-width: 45%;
-  bottom: 300px;
+  top: 00px;
   z-index: 2;
 }
 
 .contentContactArchitecture{
   position: fixed;
   max-width: 45%;
-  bottom: 50px;
+  top: 500px;
   z-index: 2;
 }
 
@@ -305,6 +311,7 @@ ul p{
   z-index: 2;
 }
 
+.Icones,
 .Mail h4{
   display: inline-block;
   padding: 2px;
@@ -317,7 +324,7 @@ ul p{
   text-decoration: none;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 959px) {
   .contentContact{
     position: static;
     max-width: none;
@@ -328,27 +335,16 @@ ul p{
   .contentContactArchitecture{
     position: static;
     max-width: none;
-    margin: 50px 0 100px;
+    margin: 50px 0 50px;
     display: block;
   }
+}
 
+@media screen and (max-width: 1079px) {
   .contentContactProjets{
     display: none;
   }
 }
-
-@media screen and (min-width: 641px) and (max-width: 1280px) {
-  .contentContact,
-  .contentContactArchitecture{
-    position: fixed;
-    bottom: 100px;
-  }
-
-  .contentContactProjets{
-    display: none;
-  }
-}
-
 
 /*---INFORMATIONS---*/
 .Informations{
@@ -357,14 +353,7 @@ ul p{
   align-items: flex-start;
 }
 
-@media screen and (max-width: 640px) {
-  .Informations{
-    position: static;
-    display: block;
-  }
-}
-
-@media screen and (min-width: 641px) and (max-width: 1280px) {
+@media screen and (max-width: 1079px) {
   .Informations{
     position: static;
     display: block;
@@ -386,7 +375,7 @@ ul p{
   margin: 0;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1079px) {
   .presentation{
     width: 100%;
     position: static;
@@ -394,12 +383,6 @@ ul p{
   }
 }
 
-@media screen and (min-width: 641px) and (max-width: 1280px) {
-  .presentation{
-    position: static;
-    margin: 0;
-  }
-}
 /*---DESCRIPTION---*/
 .description{
   margin-top: 90px;
@@ -436,15 +419,9 @@ ul p{
   text-decoration: underline dotted;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1079px) {
   .description{
     width: 100%;
-    position: static;
-    margin: 20px 0;
-  }
-}
-@media screen and (min-width: 641px) and (max-width: 1280px) {
-  .description{
     position: static;
     margin: 20px 0;
   }
@@ -518,13 +495,15 @@ figcaption a:hover{
 }
 
 .BlockImagesProjets .horizontal img{
-  margin: 0px 0 23px 16px;
-  width: 730px;
+  margin: 0 0 23px 16px;
+  width: 54%;
+  height: auto;
 }
 
 .BlockImagesProjets .vertical img{
-  margin: 0px 170px 23px 0;
-  width: 560px;
+  margin: 0 0 23px 16px;
+  width: 45%;
+  height: auto;
 }
 
 .copyright{
@@ -539,22 +518,22 @@ figcaption a:hover{
   margin: 0;
 }
 
-@media screen and (max-width: 640px) {
-  .BlockImagesArchi{
-    margin-left: 0;
-  }
-
+@media screen and (max-width: 959px) {
+  .BlockImagesArchi,
   .BlockImagesArchi figure{
     margin-left: 0;
   }
 
-  .BlockImagesArchi .horizontal img,
-  .BlockImagesArchi .vertical img{
+
+  .BlockImagesArchi .vertical img,
+  .BlockImagesArchi .horizontal img{
     display: block;
     width: 100%;
     height: auto;
   }
+}
 
+@media screen and (max-width: 1079px) {
   .BlockImagesProjets{
     position: static;
     margin-left: 0;
@@ -568,31 +547,6 @@ figcaption a:hover{
     margin-left: 0;
   }
 }
-
-@media screen and (min-width: 641px) and (max-width: 1280px) {
-  .BlockImagesArchi,
-  .BlockImagesMobilier,
-  .BlockImagesProjets{
-    margin: 70px 0 0 16px;
-  }
-}
-
-@media screen and (min-width: 641px) and (max-width: 1280px) {
-  .BlockImagesProjets{
-    margin: 0 0 0 16px;
-    text-align: right;
-  }
-}
-
-@media screen and (min-width: 641px) and (max-width: 1280px) {
-  .BlockImagesProjets .horizontal img,
-  .BlockImagesProjets .vertical img{
-    width: 70%;
-    height: auto;
-    margin-right: 16px;
-  }
-}
-
 
 /*---FOOTER---*/
 .footer{
@@ -629,18 +583,11 @@ figcaption a:hover{
   text-decoration: line-through;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 959px) {
   .footerHome{
     position: fixed;
     bottom: 16px;
     left: 16px;
-  }
-}
-
-@media screen and (min-height: 600px) {
-  .footerHome{
-    position: fixed;
-    bottom: 16px;
   }
 }
 
