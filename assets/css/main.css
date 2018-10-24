@@ -64,7 +64,7 @@ body {
 
 h2{
   font-size: 19px;
-  line-height: 1.6em;
+  line-height: 1.6;
 }
 
 h2 p{
@@ -195,7 +195,7 @@ p{
 /*---MENU---*/
 .menuHome{
   position: fixed;
-  width: 30%;
+  width: 24%;
   top: 100px;
 }
 
@@ -246,33 +246,17 @@ p{
   text-decoration: none;
   position: relative;
   display: inline-block;
-}
-
-.menu a::after,
-.menu .current::after  {
-  content: "";
-  display: block;
-  position: absolute;
   border-bottom: 1px dotted;
-  left: 0;
-  right: 0;
-  height: 1px;
-  bottom: 4px;
+  line-height: 1;
 }
 
 .menu a{
   color: #FF0000;
-}
-
-.menu a::after {
   border-color: #FF0000;
 }
 
 .menu a:hover {
   color: #02edff;
-}
-
-.menu a:hover::after {
   border-color: #02edff;
 }
 
