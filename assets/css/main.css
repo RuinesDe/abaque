@@ -135,6 +135,19 @@ p{
   right: 0;
 }
 
+.bureauBackground {
+  position: fixed;
+  background-image: url("../img/captainAbaque.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 0;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 .contentHome {
   height: 100%;
   z-index: 2;
@@ -234,7 +247,7 @@ p{
 }
 
 .menu a:hover {
-  color: #56DBF7;
+  color: #02edff;
   text-decoration: underline dotted;
 }
 
@@ -254,7 +267,7 @@ p{
 }
 
 .menu .title a:hover {
-  color: #56DBF7;
+  color: #02edff;
   text-decoration: underline dotted;
 }
 
@@ -315,7 +328,8 @@ p{
 }
 
 .icones,
-.mail h4{
+.mail h4,
+.mail span{
   display: inline-block;
   padding: 2px;
   background-color: white;
@@ -371,6 +385,7 @@ p{
 .presentation h4{
   background-color: white;
   margin-left: 30px;
+  font-style: italic;
 }
 
 @media screen and (max-width: 1079px) {
@@ -417,6 +432,7 @@ p{
 
 .descriptionValue a{
   text-decoration: none;
+  color: #fb743e;
 }
 
 .descriptionValue a:hover{
@@ -464,6 +480,7 @@ figure{
 .figureLink:hover figcaption,
 .figureLink:focus figcaption {
   font-style: italic;
+  color: #02edff;
 }
 
 .blockImagesArchi .horizontal img{
@@ -478,6 +495,7 @@ figcaption{
   background-color: white;
   margin: 0 0 23px 0;
   text-align: left;
+  color: #424242;
 }
 
 figcaption a{
@@ -492,6 +510,7 @@ figcaption p{
 
 figcaption a:hover{
   filter: opacity(80%);
+  color: ;
 }
 
 .blockImagesProjets .horizontal img,
