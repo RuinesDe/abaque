@@ -262,15 +262,17 @@ p{
 
 .menu .current {
   color: #424242;
+  border-color: #424242;
 }
 
 .menu .title a{
   color: #424242;
-  text-decoration: none;
+  border-color: #424242;
 }
 
 .menu .title a:hover {
   color: #02edff;
+  border-color: #02edff;
 }
 
 .menu .title a:after {
@@ -389,6 +391,15 @@ p{
   font-style: italic;
 }
 
+.presentation a{
+  text-decoration: none;
+  color: #fb743e;
+}
+
+.presentation a:hover{
+  color: #b8a310;
+}
+
 @media screen and (max-width: 1079px) {
   .presentation{
     position: static;
@@ -438,7 +449,6 @@ p{
 
 .descriptionValue a:hover{
   color: #b8a310;
-  border-bottom: : 4px dotted;
 }
 
 @media screen and (max-width: 1079px) {
