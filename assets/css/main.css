@@ -330,6 +330,8 @@ p{
   z-index: 2;
 }
 
+
+.cv h4,
 .icones,
 .mail h4,
 .mail span{
@@ -342,6 +344,15 @@ p{
 .mail h4 a{
   color: #FB743E;
   text-decoration: none;
+}
+
+.cv h4 a{
+  color: #b8a310;
+  text-decoration: none;
+}
+
+.cv a:hover{
+  color: #FB743E;
 }
 
 @media screen and (max-width: 959px) {
