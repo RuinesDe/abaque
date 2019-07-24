@@ -171,6 +171,7 @@ p{
   background-size: inherit;
 }
 
+.contentHome.contact-visible .menuCollabo,
 .contentHome.contact-visible .menuHome,
 .contentHome.contact-visible .menuArchitecture,
 .contentHome.contact-visible .menuProjets,
@@ -187,6 +188,19 @@ p{
 
 @media screen and (max-width: 1079px) {
   .contentFixedProjets{
+    position: static;
+    max-width: 100%;
+  }
+}
+
+.contentFixedCollabo{
+  position: fixed;
+  max-width: 75%;
+  z-index: inherit;
+}
+
+@media screen and (max-width: 1079px) {
+  .contentFixedCollabo{
     position: static;
     max-width: 100%;
   }
@@ -209,6 +223,12 @@ p{
   width: 50%;
 }
 
+.menuCollabo{
+  display: block;
+  width: 50%;
+  z-index: 7;
+}
+
 @media screen and (max-width: 959px) {
   .menuHome,
   .menuArchitecture{
@@ -218,7 +238,8 @@ p{
 }
 
 @media screen and (max-width: 1079px) {
-  .menuProjets{
+  .menuProjets,
+  .menuCollabo{
     width: 100%;
     position: static;
   }
@@ -226,7 +247,8 @@ p{
 
 .menuHome h2,
 .menuArchitecture h2,
-.menuProjets h2{
+.menuProjets h2,
+.menuCollabo h2{
   font-family: 'belgika-16th-webfont', Georgia, sans-serif;
   display: inline;
   background-color: white;
@@ -235,7 +257,8 @@ p{
 
 .menuHome .title,
 .menuArchitecture .title,
-.menuProjets .title{
+.menuProjets .title,
+.menuCollabo .title{
     color: #424242;
     text-decoration: underline;
 }
@@ -279,7 +302,7 @@ p{
   color: #FF0000;
 }
 
-/*---navigation---*/
+/*---NAVIGATION---*/
 .contentNavigation{
   width: 50%;
   margin: 0 0 0 auto;
@@ -311,7 +334,6 @@ p{
 }
 
 /*--CONTACT--*/
-
 .contentContact{
   position: fixed;
   top: 300px;
@@ -329,7 +351,6 @@ p{
   bottom: 30px;
   z-index: 2;
 }
-
 
 .cv h4,
 .icones,
@@ -386,6 +407,58 @@ p{
   .informations{
     position: static;
     flex-direction: column-reverse;
+    width: 100%;
+  }
+}
+
+/*---COLLABORATION---*/
+.collaboration{
+  width: 80%;
+  margin-top: 30px;
+}
+
+.collaboration p{
+  background-color: white;
+}
+
+.collaboration a{
+  text-decoration: none;
+  color: #fb743e;
+}
+
+.collaboration a:hover{
+  color: #b8a310;
+}
+
+@media screen and (max-width: 1079px) {
+  .collaboration{
+    position: static;
+    margin-bottom: 16px;
+    width: 100%;
+  }
+}
+
+/*---DEFINITION---*/
+.definition{
+  display: inline-block;
+  margin-left: 100px;
+  margin-top: 30px;
+  width: 30%;
+}
+
+.definition a{
+  text-decoration: none;
+  color: #fb743e;
+}
+
+.definition a:hover{
+  color: #b8a310;
+}
+
+@media screen and (max-width: 1079px) {
+  .definition{
+    position: static;
+    margin: 20px 0;
     width: 100%;
   }
 }
@@ -609,14 +682,15 @@ figcaption a:hover{
   position: relative;
   text-align: right;
   z-index: 2;
+  filter: opacity(70%);
 }
 
 .footerHome{
   position: absolute;
   bottom: 16px;
   right: 16px;
-  filter: opacity(70%);
   z-index: 2;
+  filter: opacity(70%);
 }
 
 
