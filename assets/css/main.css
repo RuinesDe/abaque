@@ -188,8 +188,9 @@ p{
 
 @media screen and (max-width: 1079px) {
   .contentFixedProjets{
-    position: static;
+    position: relative;
     max-width: 100%;
+    z-index: 2;
   }
 }
 
@@ -230,10 +231,17 @@ p{
 }
 
 @media screen and (max-width: 959px) {
-  .menuHome,
-  .menuArchitecture{
+  .menuHome {
     width: 100%;
     position: static;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .menuArchitecture{
+    width: 100%;
+    position: relative;
+    z-index: 2;
   }
 }
 
@@ -242,6 +250,8 @@ p{
   .menuCollabo{
     width: 100%;
     position: static;
+    position: relative;
+    z-index: 2;
   }
 }
 
@@ -251,7 +261,7 @@ p{
 .menuCollabo h2{
   font-family: 'belgika-16th-webfont', Georgia, sans-serif;
   display: inline;
-  background-color: white;
+  background-color: #00FFFF;
   padding: 2px 3px;
 }
 
@@ -385,10 +395,11 @@ p{
   }
 
   .contentContactArchitecture{
-    position: static;
+    position: relative;
     max-width: none;
     margin: 50px 0 50px;
     display: block;
+    z-index: 2;
   }
 }
 
@@ -548,6 +559,8 @@ p{
 .BlockImagesMobilier{
   margin: 40px 0 0 16px;
   text-align: right;
+  position: relative;
+  z-index: 2;
 }
 
 .blockImagesProjets{
